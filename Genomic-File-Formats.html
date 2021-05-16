@@ -236,7 +236,7 @@ intervals based on the indexing.&nbsp; &nbsp;<br>
                 <div class="u-container-layout u-container-layout-1">
                   <h2 class="u-align-left u-text u-text-1">BEDtools Suite</h2>
                   <div class="u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
-                  <p class="u-align-justify u-text u-text-2">It is one thing to know the options of file formats- it is another to know how to manipulate file formats to obtain the needed data. We will begin with two popular suite of tools that manipulate data, both of which are found amongst Galaxy’s list of tools to utilize for bioinformaticians. The first suite of tools is the&nbsp;<i>
+                  <p class="u-align-justify u-text u-text-2">It is one thing to know the options of file formats- it is another to know how to manipulate file formats to obtain the needed data. We will begin with two popular suite of tools that manipulate data, both of which are found amongst Galaxy’s list of tools to utilize for bioinformaticians. The first suite of tools is the<i>
                       <a href="http://bedtools.readthedocs.org/en/latest/content/tools/intersect.html" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">BEDtools</a></i>&nbsp;suite, which is widely known as the “Swiss Army Knife” of manipulating genomic data for genomic intervals. Outside of Galaxy, the BEDtools suite can be installed on a&nbsp;<i>Unix</i>&nbsp;server and commands can be entered through a Unix shell to perform operations.&nbsp; &nbsp;<br>
                   </p>
                   <img src="images/8-GenomicFileFormats-bedtoolsOptions_class.png" alt="" class="u-image u-image-default u-image-1" data-image-width="1158" data-image-height="572">
@@ -262,13 +262,13 @@ commands on Unix will be performed in this manner: <b>bedtools &lt;command&gt;
 command <i>intersect</i> is a tool used to find overlaps in the intervals of
 features within different BED files. Using this example, the option <b>-wa</b> is
 used to obtain the full interval of <i>file A</i> that overlaps with any part
-of <i>file B</i>. The option <b>-v<i></i></b>is used to obtain intervals from <i>file
+of <i>file B</i>. The option <b>-v<i></i></b> is used to obtain intervals from <i>file
 A</i> that does not intersect with any intervals on <i>file B</i>. Please see
 the figure below for a graphical display of the <i>intersect</i> command’s
 options.&nbsp;&nbsp;<br>
                   </p>
                   <img src="images/8-GenomicFileFormats-IntersectIntervals_class.png" alt="" class="u-image u-image-default u-image-1" data-image-width="853" data-image-height="350">
-                  <p class="u-align-justify u-text u-text-2">Likewise, other commands can be used to get the desired
+                  <br><br><p class="u-align-justify u-text u-text-2">Likewise, other commands can be used to get the desired
 output. The figure below gives a broad overview of the commands from BEDtools
 and what kind of output is given.&nbsp; &nbsp;<br>
                   </p>
@@ -289,8 +289,8 @@ and what kind of output is given.&nbsp; &nbsp;<br>
                 <div class="u-container-layout u-container-layout-1">
                   <h2 class="u-align-left u-text u-text-1">SAMtools Suite</h2>
                   <div class="u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
-                  <p class="u-align-justify u-text u-text-2">&nbsp; The second suite of tools is the <i>
-                      <a href="http://www.htslib.org/download/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">SAMtools</a></i>suite, which is also
+                  <p class="u-align-justify u-text u-text-2">The second suite of tools is the <i>
+                      <a href="http://www.htslib.org/download/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">SAMtools</a></i> suite, which is also
 available on Galaxy or can be locally installed into a Unix server. The command <a href="http://www.htslib.org/doc/samtools.html" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">tools</a> within SAMtools
 allow for manipulation of SAM file formats, as well as other alignment-based
 file formats (BAM or CRAM). For example, the <i>view</i> command allows for
@@ -416,7 +416,7 @@ the figure below.&nbsp;&nbsp;<br>
               <div class="u-layout-col">
                 <div class="u-align-justify u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-1">
                   <div class="u-container-layout u-container-layout-1">
-                    <p class="u-text u-text-1"><b>Fourth</b><b>Question:</b> Set the file options in the
+                    <p class="u-text u-text-1"><b>Fourth Question:</b> Set the file options in the
 same manner as the third question. Using the same tool in a separate instance, the
 (<b>-v</b>) option in the parameters is selected for to show only unique CpG
 regions that did not intersect with an exon. All other parameters are held at
@@ -441,7 +441,7 @@ intersect an exon. Your result should be the same as the figure below.&nbsp;&nbs
         <div class="u-container-layout u-container-layout-1">
           <h2 class="u-align-left u-text u-text-1"> Bonus Question! </h2>
           <div class="u-palette-1-base u-shape u-shape-rectangle u-shape-2"></div>
-          <p class="u-text u-text-body-color u-text-2">The Galaxy Server is a highly malleable set of tools for any
+          <p class="u-text u-text-body-color u-text-2">The Galaxy server is a highly malleable set of tools for any
 bioinformatician to utilize. Best of all, the pipeline process in data
 manipulation allows workflows to be saved and exported. This way your future
 colleagues will be able to upload the workflow to view your parameter and

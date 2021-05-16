@@ -262,13 +262,13 @@ although certain BioMart tools may be available in archived databases, those
 archived databases do not contain the same up-to-date information.&nbsp;<br>&nbsp;&nbsp;&nbsp;<br>Within BioMart are subcategories listed under two main
 categories: <i>Filters </i>and <i>Attributes</i>. The <i>Filters</i> category allow
 you to select for genes that has certain features in the subcategories. Expand
-the subcategories to find what subcategory you can search for: <i>Region</i>, <i>Gene</i>, <i>Phenotype</i>, <i>Gene</i><i>Ontology</i>, <i>Multi</i>-<i>Species</i><i>comparisons</i>, <i>Protein</i><i>Domains</i> and <i>Family</i>, and <i>Variant</i>. For example,
+the subcategories to find what subcategory you can search for: <i>Region</i>, <i>Gene</i>, <i>Phenotype</i>, <i>Gene Ontology</i>, <i>Multi Species comparisons</i>, <i>Protein Domains</i> and <i>Family</i>, and <i>Variant</i>. For example,
 the <i>Region</i> subcategory can be used to pick out the physical region of
 chromosome, locations, coordinates, etc. The <i>Gene</i> subcategory allows you
 to pick out IDs, features with external databases, transcript counts, etc. The <i>Attributes</i> category allow you to display what you want to see by column in the result. The
 selected subcategories under <i>Attributes</i> are the headings of the column
 in the result. The top item under the <i>Attribute</i> link is the first column
-and so on. There are three subcategories for the attributes: <i>Gene</i>, <i>External</i>, <i>Protein</i><i>Domains</i>, and <i>Family</i>.&nbsp; &nbsp;<br>
+and so on. There are three subcategories for the attributes: <i>Gene</i>, <i>External</i>, <i>Protein Domains</i>, and <i>Family</i>.&nbsp; &nbsp;<br>
                     <br>In summary, the result are the data are queried for based on
 the <i>Filter </i>category, then displayed based on these columns with each
 line down based on the <i>Attributes </i>category. &nbsp;This means that you can have 1 gene and 10
@@ -315,10 +315,10 @@ Ensembl database and the specific dataset (based on the organism) must be
 loaded first. For accessing the Ensembl database for <i>Homo sapiens </i>genes,
 the command to do this in R is:&nbsp;<br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ensembl &lt;- useDataset(dataset =
 "hsapiens_gene_ensembl", mart = ensembl)</b>&nbsp; &nbsp;<br>
-                    <br>Once the database is loaded, use the <b>getBM()<i></i></b>command
+                    <br>Once the database is loaded, use the <b>getBM()</b> command
 in R to retrieve information. The concept of searching the database is identical
 to that of Ensembl’s BioMart, which is a web-based version of the R-based
-Bioconductor package. The <b>getBM()</b> command has four arguments: <i>attributes</i>, <i>filters</i>, value, and <i>mart</i>. The arguments will utilize the equal (=)
+Bioconductor package. The <b>getBM()</b> command has four arguments: <i>attributes</i>, <i>filters</i>, <i>value</i>, and <i>mart</i>. The arguments will utilize the equal (=)
 sign to indicate argument values. The <i>attributes</i> parameter is for the
 columns to be displayed. The <i>filters</i> parameter contain the subcategories
 to filter your query by, with the values of filtering based on the <i>value</i> parameter. The <i>mart</i> parameter is usually already established when selecting
@@ -335,7 +335,7 @@ values (‘202763_at’, ‘209310_s_at’, and ‘207500_at’) in the database
 which was declared as a variable in the first sample command for <b>useDataset()</b>.
 In creating variables, the results of the <b>getBM()</b> command can be stored
 within another variable to be used for other R-based commands, such as <b>head()</b>.
-For more information on R-language commands, please visit <a href="https://www.google.com/search?q=r+commands&amp;oq=r+commands&amp;aqs=chrome..69i57j46i20i131i263i433j69i65l3j69i60l3.1854j0j4&amp;sourceid=chrome&amp;ie=UTF-8" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">this</a> page. It is also important to note that the R-language does not require spacing
+For more information on R-language commands, please visit <a href="https://www.personality-project.org/r/r.commands.html" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">this</a> page. It is also important to note that the R-language does not require spacing
 and delineates based on reserved characters. Aside from the <b>getBM() </b>command,
 there are several others that can be used for accessing the database, such as <b>listAttributes()</b>, <b>listMart()</b>, etc. For a more thorough walkthrough on how to utilize
 biomaRt commands, please visit <a href="https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/accessing_ensembl.html" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">this</a> page for the documentation and <a href="https://www.youtube.com/watch?v=Rb4bl1zCv7I" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">this</a> page for a video guide.&nbsp; &nbsp;&nbsp;<br>
@@ -393,9 +393,9 @@ data of different formats into the formats that are accepted and used by Galaxy.
       </div>
       <div class="u-align-justify u-container-style u-group u-shape-rectangle u-white u-group-1">
         <div class="u-container-layout u-container-layout-1">
-          <p class="u-text u-text-body-color u-text-1">The server itself is maintained, and contributed to, by groups of academics and individual users, who are collectively known as the&nbsp;<i>
+          <p class="u-text u-text-body-color u-text-1">The server itself is maintained, and contributed to, by groups of academics and individual users, who are collectively known as the <i>
               <a href="https://galaxyproject.org/community/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Galaxy community</a></i>. Galaxy can be used through the cloud server or it can be&nbsp;<a href="https://new.galaxyproject.org/admin/get-galaxy/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">installed locally</a>. The full potential of Galaxy is not able to be summed up in a single chapter, if not this entire tool, and will need to be learned through use by&nbsp;<a href="http://vimeo.com/channels/usegalaxy" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">tutorials</a>&nbsp;and&nbsp;<a href="https://galaxyproject.org/tutorials/g101/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">walkthroughs</a>. Please
-see the embedded page below for a sample of Galaxy’s workflow pipeline.&nbsp;&nbsp;
+see the embedded page below for a sample of Galaxy’s workflow pipeline or visit <a href="https://usegalaxy.org/u/brian_poon/p/finalproject" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">this </a> link here.
           </p>
         </div>
       </div>
